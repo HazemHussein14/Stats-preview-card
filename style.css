@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif;*/
+}
+ul {
+  list-style: none;
+}
+:root {
+  --main-background: #090b1a;
+  --card-background: #1b1938;
+  --accent: #aa5cdb;
+  --main-heading-stats: #ffffff;
+  --main-paragraph: #ffffffbf;
+  --stat-headings: #ffffff99;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  gap: 6.4rem;
+  background-color: var(--main-background);
+}
+.card {
+  max-width: 85rem;
+  display: flex;
+  gap: 3.2rem;
+  background-color: var(--card-background);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.card .img-box {
+  flex-basis: 50%;
+  position: relative;
+}
+.card .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.img-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 6, 134, 0.529);
+}
+.content-box {
+  padding: 5.4rem;
+  flex: 1;
+}
+.content-box .text {
+  margin-bottom: 4.8rem;
+}
+.content-box h1 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--main-heading-stats);
+  margin-bottom: 1.6rem;
+}
+.content-box h1 .insights {
+  color: var(--accent);
+}
+.content-box .text P {
+  font-size: 1.5rem;
+  color: var(--main-paragraph);
+  line-height: 1.5;
+}
+.featured-in ul {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.number {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--main-heading-stats);
+  margin-bottom: 0.8rem;
+}
+.type {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--stat-headings);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--main-heading-stats);
+}
+.attribution a {
+  color: var(--accent);
+  text-decoration: none;
+}
+@media (max-width: 53em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 47em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 40em) {
+  body {
+    padding: 2rem;
+  }
+  .card {
+    max-width: 36.5rem;
+    flex-direction: column;
+    gap: 0;
+  }
+  .card .img-box {
+    flex-basis: 30%;
+    order: -1;
+  }
+  .content-box {
+    text-align: center;
+  }
+  .content-box .text {
+    margin-bottom: 4.8rem;
+  }
+  .featured-in ul {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
